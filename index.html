@@ -3,61 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thaswik Travels</title>
+<title>Thaswik Travels | Viruthunagar</title>
+
 <style>
-*{box-sizing:border-box}
-body{
+*{
+  box-sizing:border-box;
   margin:0;
+  padding:0;
+}
+
+body{
   font-family:Arial,sans-serif;
-  background:#111;
+  background:#0b0b0b;
   color:white;
   text-align:center;
 }
+
 header{
-  padding:25px 15px;
-  background:#000;
+  padding:30px 15px;
+  background:linear-gradient(135deg,#000,#222);
 }
-h1{
-  margin:0;
+
+header h1{
   font-size:36px;
+  margin-bottom:8px;
+  letter-spacing:1px;
 }
+
+header p{
+  font-size:17px;
+  color:#ddd;
+}
+
 .hero{
-  padding:20px 10px 35px;
+  padding:25px 15px 35px;
 }
+
 .hero img{
   width:100%;
   max-width:900px;
-  height:auto;
-  border-radius:15px;
+  border-radius:18px;
   display:block;
-  margin:15px auto;
+  margin:15px auto 25px;
+  box-shadow:0 8px 25px rgba(0,0,0,.6);
 }
-h2{
+
+.hero h2{
+  font-size:29px;
+  margin:10px 0;
+}
+
+.hero p{
+  font-size:18px;
+  color:#ddd;
+  line-height:1.5;
+  margin-bottom:25px;
+}
+
+.services{
+  background:#171717;
+  padding:30px 15px;
+}
+
+.services h2{
   font-size:28px;
-  margin:20px 0 10px;
+  margin-bottom:20px;
 }
-p{
-  font-size:19px;
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.card{
+  background:#252525;
+  padding:20px;
+  border-radius:15px;
+  width:260px;
+}
+
+.card h3{
+  margin-bottom:8px;
+  font-size:20px;
+}
+
+.card p{
+  color:#ccc;
+  font-size:15px;
+}
+
+.contact{
+  padding:35px 15px;
+  background:#000;
+}
+
+.contact h2{
+  font-size:29px;
+  margin-bottom:15px;
+}
+
+.contact p{
+  font-size:18px;
   margin:10px;
 }
-.contact{
-  background:#222;
-  padding:25px 10px;
+
+.buttons{
+  margin-top:22px;
 }
-.phone{
+
+.button{
   display:inline-block;
-  margin-top:15px;
   padding:14px 25px;
-  background:#25d366;
-  color:white;
-  text-decoration:none;
+  margin:7px;
   border-radius:30px;
-  font-size:20px;
+  text-decoration:none;
+  color:white;
+  font-size:18px;
   font-weight:bold;
 }
+
+.call{
+  background:#25d366;
+}
+
+.whatsapp{
+  background:#128c7e;
+}
+
 footer{
   padding:20px;
-  background:#000;
+  background:#080808;
+  color:#aaa;
+  font-size:14px;
 }
 </style>
 </head>
@@ -70,26 +149,69 @@ footer{
 </header>
 
 <section class="hero">
+
   <img src="tempo2.jpg" alt="Thaswik Travels Tempo Traveller">
 
-  <h2>Travel With Comfort</h2>
-  <p>Clean and comfortable tempo traveller for your journey.</p>
+  <h2>Travel With Comfort 🚐</h2>
 
-  <img src="interior.jpg" alt="Tempo Traveller Interior">
+  <p>
+    Clean, comfortable and reliable Tempo Traveller
+    for your family trips, tours and journeys.
+  </p>
+
+  <img src="interior.jpg" alt="Thaswik Travels Interior">
+
+</section>
+
+<section class="services">
+
+  <h2>Our Service</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🚐 Comfortable Travel</h3>
+      <p>Enjoy a comfortable journey with our Tempo Traveller.</p>
+    </div>
+
+    <div class="card">
+      <h3>👨‍👩‍👧‍👦 Family Trips</h3>
+      <p>Suitable for family trips, tours and group travel.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛣️ Tourist Trips</h3>
+      <p>Plan your next trip with Thaswik Travels.</p>
+    </div>
+
+  </div>
+
 </section>
 
 <section class="contact">
-  <h2>Book Your Journey</h2>
+
+  <h2>Book Your Journey 📞</h2>
+
   <p>📍 Viruthunagar</p>
   <p>📞 9791253078</p>
 
-  <a class="phone" href="tel:9791253078">
-    Call Now
-  </a>
+  <div class="buttons">
+
+    <a class="button call" href="tel:9791253078">
+      📞 Call Now
+    </a>
+
+    <a class="button whatsapp"
+       href="https://wa.me/919791253078?text=Hello%20Thaswik%20Travels,%20I%20want%20to%20book%20a%20Tempo%20Traveller.">
+      💬 WhatsApp
+    </a>
+
+  </div>
+
 </section>
 
 <footer>
-  <p>© 2026 Thaswik Travels</p>
+  © 2026 Thaswik Travels • Viruthunagar
 </footer>
 
 </body>
